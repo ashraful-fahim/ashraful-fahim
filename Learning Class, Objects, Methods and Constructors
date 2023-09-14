@@ -1,11 +1,12 @@
-class Room:          #create a class
+
+class Room:                                 #create a class
     def __init__(self,length,breadth):      #created a method with the constructor
         self.length = length
         self.breadth = breadth
     def area(self):     
         print('Area of the class room: ', self.length * self.breadth,'sq. unit.')
 
-class_room1 = Room(50,70)                  #instantiating
+class_room1 = Room(50,70)                   #instantiating
 class_room1.area()
 class_room2 = Room(50,40)
 class_room2.area()

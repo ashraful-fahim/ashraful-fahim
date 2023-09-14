@@ -1,0 +1,16 @@
+class Room:              #created a class
+    length = 0.0
+    breadth = 0.0
+    def area(self):      #created a method
+        print('Area of the class room:', self.length * self.breadth,'sq. unit.')
+
+class_room1 = Room()     #instantiating
+class_room2 = Room()
+
+class_room1.length = 50
+class_room1.breadth = 60
+class_room2.length = 50
+class_room2.breadth = 40
+
+class_room1.area()
+class_room2.area()

@@ -1,0 +1,30 @@
+class Person:
+    def move(self):
+        print('Moves 4 paces')
+    def rest(self):
+        print('Gains 5 health points')
+class Doctor:
+    def heal(self):
+        print('Gains 10 health points')
+class Fighter(Person):
+    def fight(self):
+        print('Does 10 health points of damage')
+    def move(self):
+        print('Moves 8 paces')
+class Wizard(Doctor,Fighter):
+    def cast_spell(self):
+        print('Turns invisible')
+    def fight(self):
+        print('Does 15 health points of damage')
+    def heal(self):
+        print('Gains 15 health points')
+
+character1 = Person()
+character2 = Doctor()
+character3 = Fighter()
+character4 = Wizard()
+
+character3.fight()
+character4.heal()                  #override the old method
+character3.fight()
+character4.fight()
